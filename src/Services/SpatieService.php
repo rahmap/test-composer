@@ -10,7 +10,7 @@ class SpatieService
 	public static function resetCache()
 	{
 		try {
-			Artisan::call('php artisan permission:cache-reset');
+			Artisan::call('permission:cache-reset');
 			
 			return response()->json([
 				'status' => true,
