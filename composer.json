@@ -1,0 +1,21 @@
+{
+    "name": "rahmap/test-composer",
+    "description": "Just Beginning",
+    "type": "library",
+    "require": {
+        "php": "^8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rahmap\\TestComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rahma Andita Purnama",
+            "email": "purwantiibuku@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
