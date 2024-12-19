@@ -19,7 +19,7 @@ class SpatieService
 		} catch (Exception $e) {
 			return response()->json([
 				'status' => false,
-				'message' => 'Failed reset cache Permission, Role and Menu' . (app()->isProduction() ? '' : '. Error : ' . $e->getMessage())
+				'message' => 'Gagal melakukan Clear Cache pada Client. Silahkan dicoba kembali atau lakukan Reset Cache secara manual' . (app()->isProduction() ? '' : '. Error : ' . $e->getMessage())
 			]);
 		}
 	}
