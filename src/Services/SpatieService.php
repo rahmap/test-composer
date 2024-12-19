@@ -2,8 +2,8 @@
 
 namespace Rahmap\TestComposer\Services;
 
-use Exception;
 use Illuminate\Support\Facades\Artisan;
+use Throwable;
 
 class SpatieService
 {
@@ -16,7 +16,7 @@ class SpatieService
 				'status' => true,
 				'message' => 'Success reset cache Permission, Role and Menu'
 			]);
-		} catch (Exception $e) {
+		} catch (Throwable $e) {
 			return response()->json([
 				'status' => false,
 				'message' => 'Gagal melakukan Clear Cache pada Client. Silahkan dicoba kembali atau lakukan Reset Cache secara manual' . (app()->isProduction() ? '' : '. Error : ' . $e->getMessage())
